@@ -1,0 +1,109 @@
+{
+  "id": "730bc7ad-f661-46b2-b354-b1c99268bc3b",
+  "version": "2.0",
+  "name": "first Chrome pr",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "3acd06f1-fb2d-4060-aef1-64c3b5ca15f3",
+    "name": "find sf",
+    "commands": [{
+      "id": "ffd5cccd-dad4-44bf-a657-8e8b4b57c9d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a05c8c8a-30d1-4121-bc09-91451f462836",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "915x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1097cdf4-7917-4335-956c-cd1dd1874145",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "skillfactory"
+    }, {
+      "id": "6b11c1d4-9cca-405d-91be-70303893673a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f164ba4c-a843-4d78-8933-40bca29d4638",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Онлайн-школа SkillFactory — онлайн-обучение ...')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2022",
+      "windowTimeout": 2000
+    }, {
+      "id": "96976be8-f270-4585-a5f6-8f14b717fe6f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "842021c3-97c1-492b-99b7-3255e345bee3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2022}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "957201bd-3995-42a3-997e-51c83b3702c2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8fb1477-299c-48aa-a2fb-7aad16acccbd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eff2bb3e-e447-4909-87f8-6b781c97e62b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd79121e-73c4-4f22-b9e6-536a88b84096",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3acd06f1-fb2d-4060-aef1-64c3b5ca15f3"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
